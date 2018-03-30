@@ -1,4 +1,7 @@
 /*
+
+  ********** FUNCTIONAL CORE **********
+
   1. Load Html from a webpage
     A. HTMLLoader.js
       a. Given a url load HTML for that page and return a DOM tree
@@ -10,8 +13,18 @@
       a. Given a list of Nodes and what information is wanted return an array of that information from the nodes
   3. Save images
     A. FileSaver.js
-      a. Given some sort of Binary save that image to disk
-        i. Will take in Binary data, a folder path, and a filename and will save the file and return success
+      a. a uri get the image and  save that image to disk
+        i. Will take in href, a folder path, and a filename and will save the file and return a promise that will download and save the image
+
+  Can easily add new functions to any file to expand functionality then add them to the shell
+
+  **************************************
+
+  ********** IMPERATIVE SHELL **********
+
+  Use imported functional core components to create the desired interaction
+
+  **************************************
 */
 
 const axios = require('axios');
