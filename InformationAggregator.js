@@ -2,7 +2,6 @@ const CreateInformationAggregator = () => {
   return {
     getText: (nodeList) => {
       const nodeText = [];
-      // console.log(nodeList);
       nodeList.forEach(function (node, index) {
         if (nodeList[index].children[0]) nodeText.push(nodeList[index].children[0].data)
       });
